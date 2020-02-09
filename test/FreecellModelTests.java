@@ -190,5 +190,4 @@ public class FreecellModelTests {
   public void testNullParamGetCard() {
     model.getCard(null, 3, 2);
   }
-
 }

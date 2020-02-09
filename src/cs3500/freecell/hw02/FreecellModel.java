@@ -52,6 +52,7 @@ public class FreecellModel implements FreecellOperations<Card> {
     if (deck != null) {
       return this.deck;
     }
+
     return Card.generateDeck();
   }
 

@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b632b4-7121-444f-ad37-eacb4d8ee1f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw03/IFreecellController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/landrews.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw03/FreecellController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$Piles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$Piles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/code 5/FreecellModelTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/code 5/FreecellModelTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs3500/freecell/hw02/FreecellModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw02/FreecellModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FreecellModelTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/FreecellModelTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/freecell/hw03/IFreecellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw03/IFreecellController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,7 +50,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="JUnit.CardTests">
+  <component name="RunManager" selected="JUnit.FreecellModelTests.testStringOps">
     <configuration name="CardTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code 5" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,16 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FreecellModelTests.testNullParamGetCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code 5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FreecellModelTests" />
-      <option name="METHOD_NAME" value="testNullParamGetCard" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FreecellModelTests.testSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code 5" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,13 +89,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FreecellModelTests.testStringOps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code 5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FreecellModelTests" />
+      <option name="METHOD_NAME" value="testStringOps" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardTests" />
+        <item itemvalue="JUnit.FreecellModelTests.testStringOps" />
         <item itemvalue="JUnit.FreecellModelTests" />
+        <item itemvalue="JUnit.CardTests" />
         <item itemvalue="JUnit.FreecellModelTests.testSample" />
         <item itemvalue="JUnit.FreecellModelTests.testGameActuallyOver" />
-        <item itemvalue="JUnit.FreecellModelTests.testNullParamGetCard" />
       </list>
     </recent_temporary>
   </component>
@@ -140,10 +139,11 @@
       <screen x="0" y="23" width="1680" height="970" />
     </state>
     <state x="109" y="126" width="1439" height="743" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1680.970@0.23.1680.970" timestamp="1580444431491" />
-    <state x="642" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1580455287636">
-      <screen x="0" y="23" width="1680" height="970" />
+    <state x="642" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1581228333952">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="642" y="215" key="#com.intellij.ide.util.MemberChooser/0.23.1680.970@0.23.1680.970" timestamp="1580455287636" />
+    <state x="642" y="215" key="#com.intellij.ide.util.MemberChooser/0.23.1680.972@0.23.1680.972" timestamp="1581228333952" />
     <state x="680" y="405" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580253845458">
       <screen x="0" y="23" width="1680" height="970" />
     </state>
@@ -152,26 +152,26 @@
       <screen x="0" y="23" width="1680" height="970" />
     </state>
     <state x="418" y="160" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.23.1680.970@0.23.1680.970" timestamp="1580253841846" />
-    <state width="1597" height="171" key="GridCell.Tab.0.bottom" timestamp="1581227521304">
+    <state width="1597" height="120" key="GridCell.Tab.0.bottom" timestamp="1581455986019">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.bottom/0.23.1680.970@0.23.1680.970" timestamp="1580500907925" />
-    <state width="1597" height="171" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1581227521304" />
-    <state width="1597" height="171" key="GridCell.Tab.0.center" timestamp="1581227521303">
+    <state width="1597" height="120" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1581455986019" />
+    <state width="1597" height="120" key="GridCell.Tab.0.center" timestamp="1581455986019">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.center/0.23.1680.970@0.23.1680.970" timestamp="1580500907924" />
-    <state width="1597" height="171" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1581227521303" />
-    <state width="1597" height="171" key="GridCell.Tab.0.left" timestamp="1581227521302">
+    <state width="1597" height="120" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1581455986019" />
+    <state width="1597" height="120" key="GridCell.Tab.0.left" timestamp="1581455986018">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.left/0.23.1680.970@0.23.1680.970" timestamp="1580500907924" />
-    <state width="1597" height="171" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1581227521302" />
-    <state width="1597" height="171" key="GridCell.Tab.0.right" timestamp="1581227521303">
+    <state width="1597" height="120" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1581455986018" />
+    <state width="1597" height="120" key="GridCell.Tab.0.right" timestamp="1581455986019">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.right/0.23.1680.970@0.23.1680.970" timestamp="1580500907924" />
-    <state width="1597" height="171" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1581227521303" />
+    <state width="1597" height="120" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1581455986019" />
     <state width="1597" height="312" key="GridCell.Tab.1.bottom" timestamp="1580776987397">
       <screen x="0" y="23" width="1680" height="972" />
     </state>

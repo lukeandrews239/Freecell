@@ -211,7 +211,6 @@ public class FreecellModel implements FreecellOperations<Card> {
     private ArrayList<Card>[] foundations;
     private Card[] opens;
     private int numCascadePiles = 8;
-    boolean found = false;
     private int numOpens = 4;
 
     private Piles() {
@@ -273,7 +272,6 @@ public class FreecellModel implements FreecellOperations<Card> {
             return false;
           }
           subjectOfInterest = cascades[sourcePileNumber].get(cascades[sourcePileNumber].size() - 1);
-          this.found = opens[destPileNum] == null;
           break;
         case FOUNDATION:
         default:

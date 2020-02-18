@@ -7,6 +7,11 @@ import java.util.Arrays;
 
 /**
  * A class representing the model for a game of Freecell.
+ *
+ * Inheritance note: It is safe to subclass this object, since all non-public methods (those not
+ * declared in the FreecellOperations interface) are either declared private or protected and final.
+ * Additionally, NO non-public inherited methods accessible to a subclass call any public methods
+ * that could be overridden (and consequently have all been declared final).
  */
 public class FreecellModel implements FreecellOperations<Card> {
 
@@ -201,6 +206,92 @@ public class FreecellModel implements FreecellOperations<Card> {
     return piles.compileGameString();
   }
 
+  // MARK -- The following six methods are all protected and final, such that they are accessible
+  // from subclasses but cannot be overridden. These methods provide additional utility to
+  // objects that inherit from FreecellModel.
+  protected final boolean verifyBuildValidity(PileType source, int pileNumber, int cardIndex) {
+    ArrayList<Card> cascadeCards;
+    if (this.piles.cascades[pileNumber] == null
+            || this.piles.cascades[pileNumber].size() - 1 < cardIndex) {
+      return false;
+    }
+    cascadeCards = this.cardsToBeMoved(source, pileNumber, cardIndex);
+    Card last = null;
+    for (Card each : cascadeCards) {
+      if (last == null) {
+        last = each;
+        continue;
+      }
+      if (last.deriveCardColor() == each.deriveCardColor()
+              || last.cardNumber().cardValue() - 1 != each.cardNumber().cardValue()) {
+        return false;
+      } else {
+        last = each;
+      }
+    }
+    return true;
+  }
+
+  protected final ArrayList<Card> cardsToBeMoved(PileType source, int pileNumber, int cardIndex) {
+    int varIndex = cardIndex;
+    ArrayList<Card> cascadeCards = new ArrayList<Card>();
+    while (varIndex <= this.piles.cascades[pileNumber].size() - 1) {
+      cascadeCards.add(this.piles.cascades[pileNumber].get(varIndex));
+      varIndex++;
+    }
+    return cascadeCards;
+  }
+
+  protected final boolean oneCardMove(PileType source, int pileNumber, int cardIndex) {
+    if (source != PileType.CASCADE) {
+      return true;
+    }
+    if (pileNumber > piles.numCascadePiles || pileNumber < 1) {
+      throw new IllegalArgumentException("Unacceptable pile number.");
+    }
+    if (this.piles.cascades[pileNumber] == null) {
+      return true;
+    }
+    return this.piles.cascades[pileNumber].size() - 2 < cardIndex;
+  }
+
+  protected final int deriveOpenSpotCount(OpenSpotType variety) {
+    int count = 0;
+    for (int i = 1; i <= this.piles.numCascadePiles; i++) {
+      if (this.piles.cascades[i].isEmpty()) {
+        count++;
+      }
+    }
+    if (variety == OpenSpotType.CASCADES) {
+      return count;
+    } else {
+      count = 0;
+    }
+    for (int i = 1; i <= this.piles.numOpens; i++) {
+      if (this.piles.opens[i] == null) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  protected final boolean gameHasBegun() {
+    return this.deck != null;
+  }
+
+  protected final void performMultiMove(PileType source, int adjustedPileNum,
+                                        int cardIndex, PileType destination, int adjustedDestNum) {
+    if (destination != PileType.CASCADE
+            || adjustedDestNum > piles.numCascadePiles
+            || adjustedDestNum < 1) {
+      throw new IllegalArgumentException("Unacceptable pile number.");
+    }
+    this.piles.performMultiMove(source, adjustedPileNum, cardIndex, destination, adjustedDestNum);
+  }
+
+  protected enum OpenSpotType {
+    OPENS, CASCADES;
+  }
 
   /**
    * Private class for keeping track of the game's piles.
@@ -392,6 +483,38 @@ public class FreecellModel implements FreecellOperations<Card> {
           throw exception;
         default:
           throw exception;
+      }
+    }
+
+    // MARK -- private utility method on Piles, for the execution of multiple card moves as a group.
+    private void performMultiMove(PileType source, int adjustedPileNum,
+                                  int cardIndex, PileType destination, int adjustedDestNum) {
+      boolean nothingThere = this.cascades[adjustedDestNum].isEmpty();
+      IllegalArgumentException invalidMoveException = new IllegalArgumentException("Invalid move.");
+      if (!nothingThere) {
+        Card lastCard = this.cascades[adjustedDestNum].get(cascades[adjustedDestNum].size() - 1);
+        Card firstCard = this.cascades[adjustedPileNum].get(cardIndex);
+        if (lastCard.deriveCardColor() == firstCard.deriveCardColor()
+                || lastCard.cardNumber().cardValue() - 1 != firstCard.cardNumber().cardValue()) {
+          throw invalidMoveException;
+        }
+      }
+      ArrayList<Card> movesToExecute = cardsToBeMoved(source, adjustedPileNum, cardIndex);
+      ArrayList<Card> prior = cascades[adjustedPileNum];
+      ArrayList<Card> priorDest = cascades[adjustedPileNum];
+      ArrayList<Boolean> success = new ArrayList<Boolean>();
+      int size = cascades[adjustedPileNum].size() - 1;
+      for (int i = size; i >= cardIndex; i--) {
+        cascades[adjustedPileNum].remove(i);
+      }
+      for (Card each : movesToExecute) {
+        cascades[adjustedPileNum].add(each);
+        success.add(verifyMoveAndExecute(source, adjustedPileNum, destination, adjustedDestNum));
+      }
+      if (success.contains(false)) {
+        cascades[adjustedPileNum] = prior;
+        cascades[adjustedDestNum] = priorDest;
+        throw invalidMoveException;
       }
     }
 

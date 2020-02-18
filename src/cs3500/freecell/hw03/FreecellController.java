@@ -10,8 +10,8 @@ import cs3500.freecell.hw02.FreecellOperations;
 import cs3500.freecell.hw02.PileType;
 
 /**
- * Represents a Controller for Freecell. Handle user moves by executing them using the model;
- * convey move outcomes to the user via the Appendable.
+ * Represents a Controller for Freecell. Handle user moves by executing them using the model; convey
+ * move outcomes to the user via the Appendable.
  */
 public class FreecellController implements IFreecellController<Card> {
 
@@ -24,8 +24,8 @@ public class FreecellController implements IFreecellController<Card> {
    * Constructor to create an instance of this controller.
    *
    * @param rd a Readable object from which we can derive user moves.
-   * @param ap an Appendable object to which we can provide the state of the game and
-   *           user interactions.
+   * @param ap an Appendable object to which we can provide the state of the game and user
+   *           interactions.
    * @throws IllegalArgumentException if either parameter is null.
    */
   public FreecellController(Readable rd, Appendable ap) {

@@ -207,7 +207,11 @@ public class MultiMoveFreecellModelTests {
     try {
       // Retrieve the private method from the MultiMoveFreecell class that yields a model
       // with win conditions.
-      Object freecellModelInstance = MultiMoveFreecellModel.class.getDeclaredConstructor().newInstance();
+      Object freecellModelInstance =
+              MultiMoveFreecellModel
+                      .class
+                      .getDeclaredConstructor()
+                      .newInstance();
       Method nearWinModelStaticGenerator =
               generator
                       .getClass()

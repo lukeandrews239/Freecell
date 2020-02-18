@@ -50,7 +50,7 @@ public class FreecellController implements IFreecellController<Card> {
    * @throws IllegalStateException    if this object hasn't been properly initialized.
    */
   @Override
-  public void playGame(List<Card> deck, FreecellOperations<Card> model,
+  public final void playGame(List<Card> deck, FreecellOperations<Card> model,
                        int numCascades, int numOpens, boolean shuffle) {
     if (deck == null || model == null) {
       throw new IllegalArgumentException("Invalid parameters.");

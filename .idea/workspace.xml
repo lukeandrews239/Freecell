@@ -2,31 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b632b4-7121-444f-ad37-eacb4d8ee1f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$OpenSpotType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw04/FreecellModelCreator$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw04/FreecellModelCreator$GameType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw04/FreecellModelCreator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw04/MultiMoveFreecellModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/code 5/FreecellControllerTests$FailingAppendable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/code 5/FreecellControllerTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/code 5/MultiMoveFreecellModelTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw04/FreecellModelCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw04/MultiMoveFreecellModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/MultiMoveFreecellModelTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$Piles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel$Piles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw02/FreecellModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$CompRequired.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$CompRequired.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$MoveComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$MoveComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$MoveTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController$MoveTracker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw03/FreecellController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/code 5/FreecellModelTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/code 5/FreecellModelTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw04/MultiMoveFreecellModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code 5/cs3500/freecell/hw04/MultiMoveFreecellModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/code 5/FreecellModelCreatorTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/code 5/FreecellModelCreatorTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/code 5/MultiMoveFreecellModelTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/code 5/MultiMoveFreecellModelTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs3500/freecell/hw02/FreecellModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw02/FreecellModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs3500/freecell/hw03/FreecellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw03/FreecellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/freecell/hw03/IFreecellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw03/IFreecellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FreecellControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/FreecellControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/freecell/hw04/MultiMoveFreecellModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/freecell/hw04/MultiMoveFreecellModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FreecellModelCreatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/FreecellModelCreatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MultiMoveFreecellModelTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MultiMoveFreecellModelTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +52,16 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="JUnit.FreecellControllerTestsForMulti">
+  <component name="RunManager" selected="JUnit.FreecellControllerTests">
+    <configuration name="FreecellControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code 5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FreecellControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FreecellControllerTestsForMulti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code 5" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,53 +71,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FreecellModelCreatorTests.testBadInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FreecellModelCreatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code 5" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FreecellModelCreatorTests" />
-      <option name="METHOD_NAME" value="testBadInput" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FreecellModelCreatorTests.testCreateGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FreecellModelTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code 5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FreecellModelCreatorTests" />
-      <option name="METHOD_NAME" value="testCreateGame" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="FreecellModelTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiMoveFreecellModelTests.testMultiMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="code 5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MultiMoveFreecellModelTests" />
-      <option name="METHOD_NAME" value="testMultiMove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiMoveFreecellModelTests.testMultiMoveExceptionForFoundationPile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiMoveFreecellModelTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code 5" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MultiMoveFreecellModelTests" />
-      <option name="METHOD_NAME" value="testMultiMoveExceptionForFoundationPile" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FreecellControllerTests" />
         <item itemvalue="JUnit.FreecellControllerTestsForMulti" />
-        <item itemvalue="JUnit.FreecellModelCreatorTests.testCreateGame" />
-        <item itemvalue="JUnit.FreecellModelCreatorTests.testBadInput" />
-        <item itemvalue="JUnit.MultiMoveFreecellModelTests.testMultiMove" />
-        <item itemvalue="JUnit.MultiMoveFreecellModelTests.testMultiMoveExceptionForFoundationPile" />
+        <item itemvalue="JUnit.FreecellModelCreatorTests" />
+        <item itemvalue="JUnit.FreecellModelTests" />
+        <item itemvalue="JUnit.MultiMoveFreecellModelTests" />
       </list>
     </recent_temporary>
   </component>
@@ -180,29 +161,29 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="566" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.972@0.23.1680.972" timestamp="1581468723459" />
-    <state width="1597" height="62" key="GridCell.Tab.0.bottom" timestamp="1582014513336">
+    <state width="1597" height="150" key="GridCell.Tab.0.bottom" timestamp="1582022084185">
       <screen x="0" y="23" width="1680" height="971" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.bottom/0.23.1680.970@0.23.1680.970" timestamp="1580500907925" />
-    <state width="1597" height="62" key="GridCell.Tab.0.bottom/0.23.1680.971@0.23.1680.971" timestamp="1582014513336" />
+    <state width="1597" height="150" key="GridCell.Tab.0.bottom/0.23.1680.971@0.23.1680.971" timestamp="1582022084185" />
     <state width="1597" height="177" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1581468802778" />
-    <state width="1597" height="62" key="GridCell.Tab.0.center" timestamp="1582014513335">
+    <state width="1597" height="150" key="GridCell.Tab.0.center" timestamp="1582022084185">
       <screen x="0" y="23" width="1680" height="971" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.center/0.23.1680.970@0.23.1680.970" timestamp="1580500907924" />
-    <state width="1597" height="62" key="GridCell.Tab.0.center/0.23.1680.971@0.23.1680.971" timestamp="1582014513335" />
+    <state width="1597" height="150" key="GridCell.Tab.0.center/0.23.1680.971@0.23.1680.971" timestamp="1582022084185" />
     <state width="1597" height="177" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1581468802778" />
-    <state width="1597" height="62" key="GridCell.Tab.0.left" timestamp="1582014513335">
+    <state width="1597" height="150" key="GridCell.Tab.0.left" timestamp="1582022084184">
       <screen x="0" y="23" width="1680" height="971" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.left/0.23.1680.970@0.23.1680.970" timestamp="1580500907924" />
-    <state width="1597" height="62" key="GridCell.Tab.0.left/0.23.1680.971@0.23.1680.971" timestamp="1582014513335" />
+    <state width="1597" height="150" key="GridCell.Tab.0.left/0.23.1680.971@0.23.1680.971" timestamp="1582022084184" />
     <state width="1597" height="177" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1581468802777" />
-    <state width="1597" height="62" key="GridCell.Tab.0.right" timestamp="1582014513335">
+    <state width="1597" height="150" key="GridCell.Tab.0.right" timestamp="1582022084185">
       <screen x="0" y="23" width="1680" height="971" />
     </state>
     <state width="1597" height="171" key="GridCell.Tab.0.right/0.23.1680.970@0.23.1680.970" timestamp="1580500907924" />
-    <state width="1597" height="62" key="GridCell.Tab.0.right/0.23.1680.971@0.23.1680.971" timestamp="1582014513335" />
+    <state width="1597" height="150" key="GridCell.Tab.0.right/0.23.1680.971@0.23.1680.971" timestamp="1582022084185" />
     <state width="1597" height="177" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1581468802778" />
     <state width="1597" height="312" key="GridCell.Tab.1.bottom" timestamp="1580776987397">
       <screen x="0" y="23" width="1680" height="972" />

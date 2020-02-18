@@ -15,12 +15,11 @@ public final class MultiMoveFreecellModel extends FreecellModel {
    *
    * @param source         the type of the source pile see {@link PileType}
    * @param pileNumber     the pile number of the given type, starting at 0
-   * @param cardIndex      the index of the card to be moved, such that all subsequent
-   *                       cards in the source pile will moved together, if they
-   *                       constitute a valid build
+   * @param cardIndex      the index of the card to be moved, such that all subsequent cards in the
+   *                       source pile will moved together, if they constitute a valid build
    * @param destination    the type of the destination pile (see {@link PileType})
    * @param destPileNumber the pile number of the given type, starting at 0
-   * @throws IllegalStateException if the game is not started
+   * @throws IllegalStateException    if the game is not started
    * @throws IllegalArgumentException if the move is not possible
    */
   @Override

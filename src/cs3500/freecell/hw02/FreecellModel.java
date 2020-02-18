@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * A class representing the model for a game of Freecell.
  *
- * Inheritance note: It is safe to subclass this object, since all non-public methods (those not
+ * <p>Inheritance note: It is safe to subclass this object, since all non-public methods (those not
  * declared in the FreecellOperations interface) are either declared private or protected and final.
  * Additionally, NO non-public inherited methods accessible to a subclass call any public methods
  * that could be overridden (and consequently have all been declared final).

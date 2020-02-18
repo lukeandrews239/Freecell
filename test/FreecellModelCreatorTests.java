@@ -6,7 +6,9 @@ import cs3500.freecell.hw04.MultiMoveFreecellModel;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-
+/**
+ * Test class for the FreecellModelCreator factory.
+ */
 public class FreecellModelCreatorTests {
 
   private FreecellModelCreator factory = new FreecellModelCreator();
